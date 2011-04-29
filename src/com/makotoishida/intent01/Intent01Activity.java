@@ -3,6 +3,7 @@ package com.makotoishida.intent01;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 public class Intent01Activity extends Activity {
@@ -13,11 +14,23 @@ public class Intent01Activity extends Activity {
         
         setContentView(R.layout.main);
         
-        procData();
     }
 	
-	private void procData() {
-    	Intent intent = getIntent();
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		
+		Log.d("test", "onDestroy");
+	}
+	
+	@Override
+	protected void onNewIntent(Intent intent) {
+		super.onNewIntent(intent);
+
+        procData(intent);
+	}
+	
+	private void procData(Intent intent) {
     	
     	if (Intent.ACTION_VIEW.equals(intent.getAction()) ){
 			String url = intent.getDataString();
