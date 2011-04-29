@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, Intent01Activity!</string>
+    <string name="initial_msg">別のアプリ上で何らかのURLを開いて下さい。</string>
     <string name="app_name">intent01</string>
 </resources>
