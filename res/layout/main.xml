@@ -4,16 +4,16 @@
     android:layout_height="fill_parent" android:orientation="vertical">
     
 	<TextView  
-	    android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
-	    android:text="Last URL:"
-	    />
-
-	<TextView  
-		android:id="@+id/txtUrl"
+		android:id="@+id/txtCount"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content"
 	    android:text="@string/initial_msg"
+	    android:textSize="20sp"
 	    />
-	    
+
+	<ListView
+		android:id="@+id/list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"  
+		/>	    
 </LinearLayout>
