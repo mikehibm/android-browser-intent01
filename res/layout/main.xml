@@ -10,10 +10,10 @@
 	    android:text="@string/initial_msg"
 	    android:textSize="20sp"
 	    />
-
+  
 	<ListView
 		android:id="@+id/list"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"  
 		/>	    
-</LinearLayout>
+</LinearLayout> 
