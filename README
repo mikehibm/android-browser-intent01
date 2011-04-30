@@ -1,0 +1,7 @@
+This is a sample program for Android 1.6 and above.
+
+Receives implicit "Open in browser" intent and shows URL history in a list view.
+Then it throws the same intent but in turn converting it to "explicit" intent, specifying standard browser as target component.
+
+END.
+
