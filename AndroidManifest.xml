@@ -12,11 +12,11 @@
     	android:debuggable="true" 
     	>
     	
+
         <activity 
         	android:name=".Intent01Activity"
-            android:label="@string/app_name" 
-			android:launchMode="singleInstance" 
-			>
+			android:label="@string/app_name" 
+			android:launchMode="singleInstance" >
                   
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

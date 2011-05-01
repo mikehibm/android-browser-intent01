@@ -23,9 +23,9 @@ public class Intent01Activity extends Activity {
         }
         
     	ListView list = (ListView)findViewById(R.id.list);
-        list.setAdapter(adapter);
+    	list.setAdapter(adapter);
 
-        processIntent(getIntent());
+    	processIntent(getIntent());
     }
 	
 	@Override
