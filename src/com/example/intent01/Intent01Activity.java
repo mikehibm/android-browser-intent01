@@ -28,23 +28,12 @@ public class Intent01Activity extends Activity {
     	processIntent(getIntent());
     }
 	
-	@Override
-	protected void onNewIntent(Intent intent) {
-		super.onNewIntent(intent);
-
-		processIntent(intent);
-	}
-	
 	private void processIntent(Intent intent) {
     	
     	if (Intent.ACTION_VIEW.equals(intent.getAction()) ){
     		
 			String url = intent.getDataString();
 			
-//    		if ( (intent.getFlags() & Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT /* 0x400000 */) != 0 ){
-//    			url = "Redirected: " + url;    			
-//    		}
-
     		//追加済みでなければ、リスト表示用の配列に追加
 			if (findUrl(url) < 0){
 				adapter.insert(url, 0);				
